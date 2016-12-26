@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Indic_native"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/adesh/Indic-native/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/adesh/Indic-native/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/adesh/Indic-native/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Indic_native">
+				<Option output="/home/adesh/Indic-native/cmake-build-debug/Indic_native" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adesh/Indic-native/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/adesh/Indic-native/src"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/dicnode"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/dicnode/internal"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/dictionary"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/dictionary/property"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/layout"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/policy"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/result"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/session"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/header"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/bigram"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/shortcut"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/bigram"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/shortcut"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/bigram"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/shortcut"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/bigram"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/shortcut"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/gesture"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/typing"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/utils"/>
+					<Add directory="/home/adesh/Indic-native/src/utils"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 Indic_native"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Indic_native/fast">
+				<Option output="/home/adesh/Indic-native/cmake-build-debug/Indic_native" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adesh/Indic-native/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/adesh/Indic-native/src"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/dicnode"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/dicnode/internal"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/dictionary"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/dictionary/property"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/layout"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/policy"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/result"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/core/session"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/header"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/bigram"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/shortcut"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/bigram"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/shortcut"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/bigram"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/shortcut"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/bigram"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/shortcut"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/gesture"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/typing"/>
+					<Add directory="/home/adesh/Indic-native/src/suggest/policyimpl/utils"/>
+					<Add directory="/home/adesh/Indic-native/src/utils"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 Indic_native/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/adesh/Indic-native/src/defines.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_node.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_node.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_node_pool.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_node_priority_queue.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_node_profiler.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_node_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_node_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_node_vector.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_nodes_cache.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/dic_nodes_cache.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/internal/dic_node_properties.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/internal/dic_node_state.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/internal/dic_node_state_input.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/internal/dic_node_state_output.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dicnode/internal/dic_node_state_scoring.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/binary_dictionary_bigrams_iterator.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/binary_dictionary_shortcut_iterator.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/bloom_filter.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/dictionary.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/dictionary.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/dictionary_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/dictionary_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/digraph_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/digraph_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/error_type_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/error_type_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/multi_bigram_map.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/multi_bigram_map.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/ngram_listener.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/property/bigram_property.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/property/unigram_property.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/property/word_property.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/dictionary/property/word_property.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/additional_proximity_chars.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/additional_proximity_chars.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/geometry_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/normal_distribution.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/normal_distribution_2d.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info_params.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info_params.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info_state.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info_state.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info_state_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info_state_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/proximity_info_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/layout/touch_position_correction_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/dictionary_bigrams_structure_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/dictionary_header_structure_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/dictionary_shortcuts_structure_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/dictionary_structure_with_buffer_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/scoring.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/suggest_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/traversal.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/weighting.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/policy/weighting.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/result/suggested_word.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/result/suggestion_results.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/result/suggestion_results.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/result/suggestions_output_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/result/suggestions_output_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/session/dic_traverse_session.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/session/dic_traverse_session.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/session/prev_words_info.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/suggest.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/suggest.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/suggest_interface.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/core/suggest_options.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/header/header_policy.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/header/header_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/header/header_read_write_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/header/header_read_write_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/bigram/ver4_bigram_list_policy.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/bigram/ver4_bigram_list_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/bigram_dict_content.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/bigram_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/bigram_entry.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/probability_dict_content.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/probability_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/probability_entry.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/shortcut_dict_content.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/shortcut_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/single_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/sparse_table_dict_content.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/sparse_table_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/terminal_position_lookup_table.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/content/terminal_position_lookup_table.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/shortcut/ver4_shortcut_list_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_dict_buffers.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_dict_buffers.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_dict_constants.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_dict_constants.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_node_reader.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_node_reader.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_node_writer.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_node_writer.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_policy.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_reading_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_reading_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_writing_helper.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_patricia_trie_writing_helper.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_pt_node_array_reader.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/backward/v402/ver4_pt_node_array_reader.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/dictionary_structure_with_buffer_policy_factory.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/dictionary_structure_with_buffer_policy_factory.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/bigram/bigram_list_read_write_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/bigram/bigram_list_read_write_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_gc_event_listeners.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_gc_event_listeners.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_reading_helper.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_reading_helper.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_reading_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_reading_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_updating_helper.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_updating_helper.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_writing_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/dynamic_pt_writing_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/patricia_trie_reading_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/patricia_trie_reading_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/pt_node_array_reader.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/pt_node_params.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/pt_node_reader.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/pt_node_writer.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/shortcut/shortcut_list_reading_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/pt_common/shortcut/shortcut_list_reading_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/bigram/bigram_list_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/patricia_trie_policy.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/patricia_trie_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/shortcut/shortcut_list_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/ver2_patricia_trie_node_reader.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/ver2_patricia_trie_node_reader.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/ver2_pt_node_array_reader.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v2/ver2_pt_node_array_reader.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/bigram/ver4_bigram_list_policy.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/bigram/ver4_bigram_list_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/bigram_dict_content.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/bigram_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/bigram_entry.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/language_model_dict_content.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/language_model_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/probability_entry.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/shortcut_dict_content.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/shortcut_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/single_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/sparse_table_dict_content.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/sparse_table_dict_content.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/terminal_position_lookup_table.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/content/terminal_position_lookup_table.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/shortcut/ver4_shortcut_list_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_dict_buffers.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_dict_buffers.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_dict_constants.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_dict_constants.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_node_reader.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_node_reader.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_node_writer.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_node_writer.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_policy.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_reading_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_reading_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_writing_helper.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_patricia_trie_writing_helper.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_pt_node_array_reader.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/structure/v4/ver4_pt_node_array_reader.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/buffer_with_extendable_buffer.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/buffer_with_extendable_buffer.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/byte_array_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/byte_array_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/dict_file_writing_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/dict_file_writing_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/file_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/file_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/forgetting_curve_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/forgetting_curve_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/format_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/format_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/historical_info.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/mmapped_buffer.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/mmapped_buffer.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/probability_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/sparse_table.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/sparse_table.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/trie_map.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/dictionary/utils/trie_map.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/gesture/gesture_suggest_policy_factory.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/gesture/gesture_suggest_policy_factory.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/scoring_params.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/scoring_params.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_scoring.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_scoring.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_suggest_policy.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_suggest_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_suggest_policy_factory.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_traversal.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_traversal.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_weighting.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/typing/typing_weighting.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/utils/damerau_levenshtein_edit_distance_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/utils/edit_distance.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/suggest/policyimpl/utils/edit_distance_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/autocorrection_threshold_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/autocorrection_threshold_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/byte_array_view.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/char_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/char_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/int_array_view.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/jni_data_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/jni_data_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/log_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/log_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/time_keeper.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/src/utils/time_keeper.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

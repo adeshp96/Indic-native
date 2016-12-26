@@ -1,3 +1,0 @@
-/home/adesh/Indic-native/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/adesh/Indic-native/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/adesh/Indic-native/cmake-build-debug/CMakeFiles/Indic_native.dir

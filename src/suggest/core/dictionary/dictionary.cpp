@@ -28,19 +28,17 @@
 #include "suggest/core/suggest_options.h"
 #include "suggest/policyimpl/gesture/gesture_suggest_policy_factory.h"
 #include "suggest/policyimpl/typing/typing_suggest_policy_factory.h"
-#include "utils/log_utils.h"
 #include "utils/time_keeper.h"
 
 namespace latinime {
 
 const int Dictionary::HEADER_ATTRIBUTE_BUFFER_SIZE = 32;
 
-Dictionary::Dictionary(JNIEnv *env, DictionaryStructureWithBufferPolicy::StructurePolicyPtr
+Dictionary::Dictionary(void *env, DictionaryStructureWithBufferPolicy::StructurePolicyPtr
         dictionaryStructureWithBufferPolicy)
         : mDictionaryStructureWithBufferPolicy(std::move(dictionaryStructureWithBufferPolicy)),
           mGestureSuggest(new Suggest(GestureSuggestPolicyFactory::getGestureSuggestPolicy())),
           mTypingSuggest(new Suggest(TypingSuggestPolicyFactory::getTypingSuggestPolicy())) {
-    logDictionaryInfo(env);
 }
 
 void Dictionary::getSuggestions(ProximityInfo *proximityInfo, DicTraverseSession *traverseSession,
@@ -128,12 +126,12 @@ int Dictionary::getNgramProbability(const PrevWordsInfo *const prevWordsInfo, co
 
 bool Dictionary::addUnigramEntry(const int *const word, const int length,
         const UnigramProperty *const unigramProperty) {
-    if (unigramProperty->representsBeginningOfSentence()
-            && !mDictionaryStructureWithBufferPolicy->getHeaderStructurePolicy()
-                    ->supportsBeginningOfSentence()) {
-        AKLOGE("The dictionary doesn't support Beginning-of-Sentence.");
-        return false;
-    }
+//    if (unigramProperty->representsBeginningOfSentence()
+//            && !mDictionaryStructureWithBufferPolicy->getHeaderStructurePolicy()
+//                    ->supportsBeginningOfSentence()) {
+//        AKLOGE("The dictionary doesn't support Beginning-of-Sentence.");
+//        return false;
+//    }
     TimeKeeper::setCurrentTime();
     return mDictionaryStructureWithBufferPolicy->addUnigramEntry(word, length, unigramProperty);
 }
@@ -177,12 +175,12 @@ void Dictionary::getProperty(const char *const query, const int queryLength, cha
             maxResultLength);
 }
 
-const WordProperty Dictionary::getWordProperty(const int *const codePoints,
-        const int codePointCount) {
-    TimeKeeper::setCurrentTime();
-    return mDictionaryStructureWithBufferPolicy->getWordProperty(
-            codePoints, codePointCount);
-}
+// const WordProperty Dictionary::getWordProperty(const int *const codePoints,
+//         const int codePointCount) {
+//     TimeKeeper::setCurrentTime();
+//     return mDictionaryStructureWithBufferPolicy->getWordProperty(
+//             codePoints, codePointCount);
+// }
 
 int Dictionary::getNextWordAndNextToken(const int token, int *const outCodePoints,
         int *const outCodePointCount) {
@@ -191,32 +189,11 @@ int Dictionary::getNextWordAndNextToken(const int token, int *const outCodePoint
             token, outCodePoints, outCodePointCount);
 }
 
-void Dictionary::logDictionaryInfo(JNIEnv *const env) const {
-    int dictionaryIdCodePointBuffer[HEADER_ATTRIBUTE_BUFFER_SIZE];
-    int versionStringCodePointBuffer[HEADER_ATTRIBUTE_BUFFER_SIZE];
-    int dateStringCodePointBuffer[HEADER_ATTRIBUTE_BUFFER_SIZE];
-    const DictionaryHeaderStructurePolicy *const headerPolicy =
-            getDictionaryStructurePolicy()->getHeaderStructurePolicy();
-    headerPolicy->readHeaderValueOrQuestionMark("dictionary", dictionaryIdCodePointBuffer,
-            HEADER_ATTRIBUTE_BUFFER_SIZE);
-    headerPolicy->readHeaderValueOrQuestionMark("version", versionStringCodePointBuffer,
-            HEADER_ATTRIBUTE_BUFFER_SIZE);
-    headerPolicy->readHeaderValueOrQuestionMark("date", dateStringCodePointBuffer,
-            HEADER_ATTRIBUTE_BUFFER_SIZE);
 
-    char dictionaryIdCharBuffer[HEADER_ATTRIBUTE_BUFFER_SIZE];
-    char versionStringCharBuffer[HEADER_ATTRIBUTE_BUFFER_SIZE];
-    char dateStringCharBuffer[HEADER_ATTRIBUTE_BUFFER_SIZE];
-    intArrayToCharArray(dictionaryIdCodePointBuffer, HEADER_ATTRIBUTE_BUFFER_SIZE,
-            dictionaryIdCharBuffer, HEADER_ATTRIBUTE_BUFFER_SIZE);
-    intArrayToCharArray(versionStringCodePointBuffer, HEADER_ATTRIBUTE_BUFFER_SIZE,
-            versionStringCharBuffer, HEADER_ATTRIBUTE_BUFFER_SIZE);
-    intArrayToCharArray(dateStringCodePointBuffer, HEADER_ATTRIBUTE_BUFFER_SIZE,
-            dateStringCharBuffer, HEADER_ATTRIBUTE_BUFFER_SIZE);
-
-    LogUtils::logToJava(env,
-            "Dictionary info: dictionary = %s ; version = %s ; date = %s",
-            dictionaryIdCharBuffer, versionStringCharBuffer, dateStringCharBuffer);
-}
 
 } // namespace latinime
+
+
+int main(){
+    return 0;
+}

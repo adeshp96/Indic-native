@@ -21,7 +21,7 @@
 #include <vector>
 
 #include "defines.h"
-#include "jni.h"
+//#include "jni.h"
 #include "suggest/core/result/suggested_word.h"
 
 namespace latinime {
@@ -33,9 +33,9 @@ class SuggestionResults {
               mSuggestedWords() {}
 
     // Returns suggestion count.
-    void outputSuggestions(JNIEnv *env, jintArray outSuggestionCount, jintArray outCodePointsArray,
-            jintArray outScoresArray, jintArray outSpaceIndicesArray, jintArray outTypesArray,
-            jintArray outAutoCommitFirstWordConfidenceArray, jfloatArray outLanguageWeight);
+//    void outputSuggestions(JNIEnv *env, jintArray outSuggestionCount, jintArray outCodePointsArray,
+//            jintArray outScoresArray, jintArray outSpaceIndicesArray, jintArray outTypesArray,
+//            jintArray outAutoCommitFirstWordConfidenceArray, jfloatArray outLanguageWeight);
     void addPrediction(const int *const codePoints, const int codePointCount, const int score);
     void addSuggestion(const int *const codePoints, const int codePointCount,
             const int score, const int type, const int indexToPartialCommit,

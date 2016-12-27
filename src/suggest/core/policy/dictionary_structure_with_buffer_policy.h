@@ -18,9 +18,10 @@
 #define LATINIME_DICTIONARY_STRUCTURE_POLICY_H
 
 #include <memory>
+#include <suggest/core/dictionary/property/bigram_property.h>
 
 #include "defines.h"
-#include "suggest/core/dictionary/property/word_property.h"
+// #include "suggest/core/dictionary/property/word_property.h"
 
 namespace latinime {
 
@@ -98,8 +99,8 @@ class DictionaryStructureWithBufferPolicy {
             const int maxResultLength) = 0;
 
     // Used for testing.
-    virtual const WordProperty getWordProperty(const int *const codePonts,
-            const int codePointCount) const = 0;
+    // virtual const WordProperty getWordProperty(const int *const codePonts,
+    //         const int codePointCount) const = 0;
 
     // Method to iterate all words in the dictionary.
     // The returned token has to be used to get the next word. If token is 0, this method newly

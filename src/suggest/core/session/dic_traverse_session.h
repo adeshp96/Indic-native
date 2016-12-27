@@ -20,7 +20,7 @@
 #include <vector>
 
 #include "defines.h"
-#include "jni.h"
+// #include "jni.h"
 #include "suggest/core/dicnode/dic_nodes_cache.h"
 #include "suggest/core/dictionary/multi_bigram_map.h"
 #include "suggest/core/layout/proximity_info_state.h"
@@ -37,19 +37,17 @@ class DicTraverseSession {
  public:
 
     // A factory method for DicTraverseSession
-    static AK_FORCE_INLINE void *getSessionInstance(JNIEnv *env, jstring localeStr,
-            jlong dictSize) {
+    static AK_FORCE_INLINE void *getSessionInstance(long dictSize) {
         // To deal with the trade-off between accuracy and memory space, large cache is used for
         // dictionaries larger that the threshold
-        return new DicTraverseSession(env, localeStr,
-                dictSize >= DICTIONARY_SIZE_THRESHOLD_TO_USE_LARGE_CACHE_FOR_SUGGESTION);
+        return new DicTraverseSession(dictSize >= DICTIONARY_SIZE_THRESHOLD_TO_USE_LARGE_CACHE_FOR_SUGGESTION);
     }
 
     static AK_FORCE_INLINE void releaseSessionInstance(DicTraverseSession *traverseSession) {
         delete traverseSession;
     }
 
-    AK_FORCE_INLINE DicTraverseSession(JNIEnv *env, jstring localeStr, bool usesLargeCache)
+    AK_FORCE_INLINE DicTraverseSession(bool usesLargeCache)
             : mProximityInfo(nullptr), mDictionary(nullptr), mSuggestOptions(nullptr),
               mDicNodesCache(usesLargeCache), mMultiBigramMap(), mInputSize(0), mMaxPointerCount(1),
               mMultiWordCostMultiplier(1.0f) {

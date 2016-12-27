@@ -19,44 +19,41 @@
 #include "suggest/core/layout/proximity_info.h"
 
 #include <algorithm>
+#include <iterator>
+
 #include <cstring>
 #include <cmath>
 
 #include "defines.h"
-#include "jni.h"
+// #include "jni.h"
 #include "suggest/core/layout/additional_proximity_chars.h"
 #include "suggest/core/layout/geometry_utils.h"
 #include "suggest/core/layout/proximity_info_params.h"
 #include "utils/char_utils.h"
 
 namespace latinime {
-
-static AK_FORCE_INLINE void safeGetOrFillZeroIntArrayRegion(JNIEnv *env, jintArray jArray,
-        jsize len, jint *buffer) {
-    if (jArray && buffer) {
-        env->GetIntArrayRegion(jArray, 0, len, buffer);
-    } else if (buffer) {
-        memset(buffer, 0, len * sizeof(buffer[0]));
+    void copyArray(int * source, int * destination, int len){
+        for (int i=0;i <len; i++)
+            destination[i] = source[i];
     }
-}
-
-static AK_FORCE_INLINE void safeGetOrFillZeroFloatArrayRegion(JNIEnv *env, jfloatArray jArray,
-        jsize len, jfloat *buffer) {
-    if (jArray && buffer) {
-        env->GetFloatArrayRegion(jArray, 0, len, buffer);
-    } else if (buffer) {
-        memset(buffer, 0, len * sizeof(buffer[0]));
+    void copyArray(char * source, char * destination, int len){
+        for (int i=0;i <len; i++)
+            destination[i] = source[i];
     }
-}
-
-ProximityInfo::ProximityInfo(JNIEnv *env, const jstring localeJStr,
-        const int keyboardWidth, const int keyboardHeight, const int gridWidth,
-        const int gridHeight, const int mostCommonKeyWidth, const int mostCommonKeyHeight,
-        const jintArray proximityChars, const int keyCount, const jintArray keyXCoordinates,
-        const jintArray keyYCoordinates, const jintArray keyWidths, const jintArray keyHeights,
-        const jintArray keyCharCodes, const jfloatArray sweetSpotCenterXs,
-        const jfloatArray sweetSpotCenterYs, const jfloatArray sweetSpotRadii)
-        : GRID_WIDTH(gridWidth), GRID_HEIGHT(gridHeight), MOST_COMMON_KEY_WIDTH(mostCommonKeyWidth),
+    void copyArray(float * source, float * destination, int len){
+        for (int i=0;i <len; i++)
+            destination[i] = source[i];
+    }
+ProximityInfo::ProximityInfo(char* LocaleStr,
+         int keyboardWidth,  int keyboardHeight,  int gridWidth,
+         int gridHeight,  int mostCommonKeyWidth,  int mostCommonKeyHeight,
+         int* proximityChars, int proximityCharsLength, int keyCount,  int* keyXCoordinates,
+         int* keyYCoordinates,  int* keyWidths,  int* keyHeights,
+         int* keyCharCodes,  float* sweetSpotCenterXs,
+         float* sweetSpotCenterYs,  float* sweetSpotRadii)
+        :
+        GRID_WIDTH(gridWidth), GRID_HEIGHT(gridHeight),
+          MOST_COMMON_KEY_WIDTH(mostCommonKeyWidth),
           MOST_COMMON_KEY_WIDTH_SQUARE(mostCommonKeyWidth * mostCommonKeyWidth),
           NORMALIZED_SQUARED_MOST_COMMON_KEY_HYPOTENUSE(1.0f +
                   GeometryUtils::SQUARE_FLOAT(static_cast<float>(mostCommonKeyHeight) /
@@ -72,35 +69,32 @@ ProximityInfo::ProximityInfo(JNIEnv *env, const jstring localeJStr,
           mProximityCharsArray(new int[GRID_WIDTH * GRID_HEIGHT * MAX_PROXIMITY_CHARS_SIZE
                   /* proximityCharsLength */]),
           mLowerCodePointToKeyMap() {
-    /* Let's check the input array length here to make sure */
-    const jsize proximityCharsLength = env->GetArrayLength(proximityChars);
-    if (proximityCharsLength != GRID_WIDTH * GRID_HEIGHT * MAX_PROXIMITY_CHARS_SIZE) {
-        AKLOGE("Invalid proximityCharsLength: %d", proximityCharsLength);
-        ASSERT(false);
-        return;
-    }
-    if (DEBUG_PROXIMITY_INFO) {
-        AKLOGI("Create proximity info array %d", proximityCharsLength);
-    }
-    const jsize localeCStrUtf8Length = env->GetStringUTFLength(localeJStr);
-    if (localeCStrUtf8Length >= MAX_LOCALE_STRING_LENGTH) {
-        AKLOGI("Locale string length too long: length=%d", localeCStrUtf8Length);
-        ASSERT(false);
-    }
+//        std::copy( std::begin(LocaleStr), std::end(LocaleStr), std::begin(mLocaleStr));
+//        std::copy( std::begin(proximityChars), std::end(proximityChars), std::begin(mProximityCharsArray));
+//        std::copy( std::begin(keyXCoordinates), std::end(keyXCoordinates),   std::begin(mKeyXCoordinates));
+//        std::copy( std::begin(keyYCoordinates), std::end(keyYCoordinates), std::begin( mKeyYCoordinates));
+//        std::copy( std::begin(keyWidths) , std::end(keyWidths), std::begin(mKeyWidths));
+//        std::copy( std::begin(keyHeights), std::end(keyHeights) ,std::begin(mKeyHeights));
+//        std::copy( std::begin(keyCharCodes), std::end(keyCharCodes), std::begin(mKeyCodePoints));
+//        std::copy( std::begin(sweetSpotCenterYs), std::end(sweetSpotCenterYs), std::begin(mSweetSpotCenterXs));
+//        std::copy( std::begin(sweetSpotCenterYs), std::end(sweetSpotCenterYs), std::begin(mSweetSpotCenterYs));
+//        std::copy( std::begin(sweetSpotRadii), std::end(sweetSpotRadii), std::begin(mSweetSpotRadii));
+        copyArray(LocaleStr, mLocaleStr, MAX_LOCALE_STRING_LENGTH);
+        copyArray(proximityChars, mProximityCharsArray, proximityCharsLength);
+        copyArray(keyXCoordinates, mKeyXCoordinates, KEY_COUNT);
+        copyArray(keyYCoordinates, mKeyYCoordinates, KEY_COUNT);
+        copyArray(keyWidths,mKeyWidths,KEY_COUNT);
+        copyArray(keyHeights, mKeyHeights, KEY_COUNT);
+        copyArray(keyCharCodes, mKeyCodePoints,KEY_COUNT);
+        copyArray(sweetSpotCenterXs, mSweetSpotCenterXs,KEY_COUNT);
+        copyArray(sweetSpotCenterYs, mSweetSpotCenterYs,KEY_COUNT);
+        copyArray(sweetSpotRadii, mSweetSpotRadii,KEY_COUNT);
     memset(mLocaleStr, 0, sizeof(mLocaleStr));
-    env->GetStringUTFRegion(localeJStr, 0, env->GetStringLength(localeJStr), mLocaleStr);
-    safeGetOrFillZeroIntArrayRegion(env, proximityChars, proximityCharsLength,
-            mProximityCharsArray);
-    safeGetOrFillZeroIntArrayRegion(env, keyXCoordinates, KEY_COUNT, mKeyXCoordinates);
-    safeGetOrFillZeroIntArrayRegion(env, keyYCoordinates, KEY_COUNT, mKeyYCoordinates);
-    safeGetOrFillZeroIntArrayRegion(env, keyWidths, KEY_COUNT, mKeyWidths);
-    safeGetOrFillZeroIntArrayRegion(env, keyHeights, KEY_COUNT, mKeyHeights);
-    safeGetOrFillZeroIntArrayRegion(env, keyCharCodes, KEY_COUNT, mKeyCodePoints);
-    safeGetOrFillZeroFloatArrayRegion(env, sweetSpotCenterXs, KEY_COUNT, mSweetSpotCenterXs);
-    safeGetOrFillZeroFloatArrayRegion(env, sweetSpotCenterYs, KEY_COUNT, mSweetSpotCenterYs);
-    safeGetOrFillZeroFloatArrayRegion(env, sweetSpotRadii, KEY_COUNT, mSweetSpotRadii);
-    initializeG();
+        initializeG();
+    
 }
+
+
 
 ProximityInfo::~ProximityInfo() {
     delete[] mProximityCharsArray;

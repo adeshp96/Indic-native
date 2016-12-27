@@ -16,36 +16,36 @@
 
 #include "suggest/core/result/suggestion_results.h"
 
-#include "utils/jni_data_utils.h"
+//#include "utils/jni_data_utils.h"
 
 namespace latinime {
 
-void SuggestionResults::outputSuggestions(JNIEnv *env, jintArray outSuggestionCount,
-        jintArray outputCodePointsArray, jintArray outScoresArray, jintArray outSpaceIndicesArray,
-        jintArray outTypesArray, jintArray outAutoCommitFirstWordConfidenceArray,
-        jfloatArray outLanguageWeight) {
-    int outputIndex = 0;
-    while (!mSuggestedWords.empty()) {
-        const SuggestedWord &suggestedWord = mSuggestedWords.top();
-        suggestedWord.getCodePointCount();
-        const int start = outputIndex * MAX_WORD_LENGTH;
-        JniDataUtils::outputCodePoints(env, outputCodePointsArray, start,
-                MAX_WORD_LENGTH /* maxLength */, suggestedWord.getCodePoint(),
-                suggestedWord.getCodePointCount(), true /* needsNullTermination */);
-        JniDataUtils::putIntToArray(env, outScoresArray, outputIndex, suggestedWord.getScore());
-        JniDataUtils::putIntToArray(env, outSpaceIndicesArray, outputIndex,
-                suggestedWord.getIndexToPartialCommit());
-        JniDataUtils::putIntToArray(env, outTypesArray, outputIndex, suggestedWord.getType());
-        if (mSuggestedWords.size() == 1) {
-            JniDataUtils::putIntToArray(env, outAutoCommitFirstWordConfidenceArray, 0 /* index */,
-                    suggestedWord.getAutoCommitFirstWordConfidence());
-        }
-        ++outputIndex;
-        mSuggestedWords.pop();
-    }
-    JniDataUtils::putIntToArray(env, outSuggestionCount, 0 /* index */, outputIndex);
-    JniDataUtils::putFloatToArray(env, outLanguageWeight, 0 /* index */, mLanguageWeight);
-}
+// void SuggestionResults::outputSuggestions(JNIEnv *env, jintArray outSuggestionCount,
+//         jintArray outputCodePointsArray, jintArray outScoresArray, jintArray outSpaceIndicesArray,
+//         jintArray outTypesArray, jintArray outAutoCommitFirstWordConfidenceArray,
+//         jfloatArray outLanguageWeight) {
+//     int outputIndex = 0;
+//     while (!mSuggestedWords.empty()) {
+//         const SuggestedWord &suggestedWord = mSuggestedWords.top();
+//         suggestedWord.getCodePointCount();
+//         const int start = outputIndex * MAX_WORD_LENGTH;
+//         JniDataUtils::outputCodePoints(env, outputCodePointsArray, start,
+//                 MAX_WORD_LENGTH /* maxLength */, suggestedWord.getCodePoint(),
+//                 suggestedWord.getCodePointCount(), true /* needsNullTermination */);
+//         JniDataUtils::putIntToArray(env, outScoresArray, outputIndex, suggestedWord.getScore());
+//         JniDataUtils::putIntToArray(env, outSpaceIndicesArray, outputIndex,
+//                 suggestedWord.getIndexToPartialCommit());
+//         JniDataUtils::putIntToArray(env, outTypesArray, outputIndex, suggestedWord.getType());
+//         if (mSuggestedWords.size() == 1) {
+//             JniDataUtils::putIntToArray(env, outAutoCommitFirstWordConfidenceArray, 0 /* index */,
+//                     suggestedWord.getAutoCommitFirstWordConfidence());
+//         }
+//         ++outputIndex;
+//         mSuggestedWords.pop();
+//     }
+//     JniDataUtils::putIntToArray(env, outSuggestionCount, 0 /* index */, outputIndex);
+//     JniDataUtils::putFloatToArray(env, outLanguageWeight, 0 /* index */, mLanguageWeight);
+// }
 
 void SuggestionResults::addPrediction(const int *const codePoints, const int codePointCount,
         const int probability) {

@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-#include "suggest/core/dictionary/property/word_property.h"
-
-#include "utils/jni_data_utils.h"
+#include "../../../../utils/jni_data_utils.h"
+#include "word_property.h"
 
 namespace latinime {
 

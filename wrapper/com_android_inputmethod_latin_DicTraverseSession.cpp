@@ -28,7 +28,7 @@ namespace latinime {
 class Dictionary;
 static jlong latinime_setDicTraverseSession(JNIEnv *env, jclass clazz, jstring localeJStr,
         jlong dictSize) {
-    void *traverseSession = DicTraverseSession::getSessionInstance(env, localeJStr, dictSize);
+    void *traverseSession = DicTraverseSession::getSessionInstance(dictSize);
     return reinterpret_cast<jlong>(traverseSession);
 }
 

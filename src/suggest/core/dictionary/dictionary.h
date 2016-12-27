@@ -20,9 +20,9 @@
 #include <memory>
 
 #include "defines.h"
-#include "jni.h"
+//#include "jni.h"
 #include "suggest/core/dictionary/ngram_listener.h"
-#include "suggest/core/dictionary/property/word_property.h"
+// #include "suggest/core/dictionary/property/word_property.h"
 #include "suggest/core/policy/dictionary_header_structure_policy.h"
 #include "suggest/core/policy/dictionary_structure_with_buffer_policy.h"
 #include "suggest/core/suggest_interface.h"
@@ -59,7 +59,7 @@ class Dictionary {
     static const int KIND_FLAG_EXACT_MATCH = 0x40000000;
     static const int KIND_FLAG_EXACT_MATCH_WITH_INTENTIONAL_OMISSION = 0x20000000;
 
-    Dictionary(JNIEnv *env, DictionaryStructureWithBufferPolicy::StructurePolicyPtr
+    Dictionary(void *env, DictionaryStructureWithBufferPolicy::StructurePolicyPtr
             dictionaryStructureWithBufferPolicy);
 
     void getSuggestions(ProximityInfo *proximityInfo, DicTraverseSession *traverseSession,
@@ -98,7 +98,7 @@ class Dictionary {
     void getProperty(const char *const query, const int queryLength, char *const outResult,
             const int maxResultLength);
 
-    const WordProperty getWordProperty(const int *const codePoints, const int codePointCount);
+    // const WordProperty getWordProperty(const int *const codePoints, const int codePointCount);
 
     // Method to iterate all words in the dictionary.
     // The returned token has to be used to get the next word. If token is 0, this method newly
@@ -137,7 +137,7 @@ class Dictionary {
     const SuggestInterfacePtr mGestureSuggest;
     const SuggestInterfacePtr mTypingSuggest;
 
-    void logDictionaryInfo(JNIEnv *const env) const;
+//    void logDictionaryInfo(JNIEnv *const env) const;
 };
 } // namespace latinime
 #endif // LATINIME_DICTIONARY_H

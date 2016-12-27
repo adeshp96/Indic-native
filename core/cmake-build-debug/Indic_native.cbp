@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Indic_native"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/adesh/Indic-native/core/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/adesh/Indic-native/core/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/adesh/Indic-native/core/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Indic_native">
+				<Option output="/home/adesh/Indic-native/core/cmake-build-debug/Indic_native" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adesh/Indic-native/core/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/adesh/Indic-native/core/."/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/dicnode"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/dicnode/internal"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/dictionary"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/dictionary/property"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/layout"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/policy"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/result"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/session"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/policyimpl/gesture"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/policyimpl/typing"/>
+					<Add directory="/home/adesh/Indic-native/core/utils"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 Indic_native"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Indic_native/fast">
+				<Option output="/home/adesh/Indic-native/core/cmake-build-debug/Indic_native" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adesh/Indic-native/core/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/adesh/Indic-native/core/."/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/dicnode"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/dicnode/internal"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/dictionary"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/dictionary/property"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/layout"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/policy"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/result"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/core/session"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/policyimpl/gesture"/>
+					<Add directory="/home/adesh/Indic-native/core/suggest/policyimpl/typing"/>
+					<Add directory="/home/adesh/Indic-native/core/utils"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/4.8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
+					<Add directory="/usr/include/c++/4.8/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 Indic_native/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/adesh/Indic-native/core/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/adesh/Indic-native/core/defines.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_node.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_node.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_node_pool.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_node_priority_queue.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_node_profiler.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_node_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_node_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_node_vector.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_nodes_cache.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/dic_nodes_cache.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/internal/dic_node_properties.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/internal/dic_node_state.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/internal/dic_node_state_input.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/internal/dic_node_state_output.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dicnode/internal/dic_node_state_scoring.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/binary_dictionary_bigrams_iterator.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/binary_dictionary_shortcut_iterator.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/bloom_filter.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/dictionary.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/dictionary.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/dictionary_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/dictionary_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/digraph_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/digraph_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/error_type_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/error_type_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/multi_bigram_map.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/multi_bigram_map.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/ngram_listener.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/property/bigram_property.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/dictionary/property/unigram_property.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/additional_proximity_chars.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/additional_proximity_chars.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/geometry_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/normal_distribution.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/normal_distribution_2d.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info_params.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info_params.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info_state.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info_state.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info_state_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info_state_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/proximity_info_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/layout/touch_position_correction_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/dictionary_bigrams_structure_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/dictionary_header_structure_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/dictionary_shortcuts_structure_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/dictionary_structure_with_buffer_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/scoring.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/suggest_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/traversal.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/weighting.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/policy/weighting.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/result/suggested_word.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/result/suggestion_results.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/result/suggestion_results.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/result/suggestions_output_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/result/suggestions_output_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/session/dic_traverse_session.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/session/dic_traverse_session.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/session/prev_words_info.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/suggest.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/suggest.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/suggest_interface.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/core/suggest_options.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/gesture/gesture_suggest_policy_factory.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/gesture/gesture_suggest_policy_factory.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/scoring_params.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/scoring_params.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_scoring.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_scoring.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_suggest_policy.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_suggest_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_suggest_policy_factory.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_traversal.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_traversal.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_weighting.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/typing/typing_weighting.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/utils/damerau_levenshtein_edit_distance_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/utils/edit_distance.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/suggest/policyimpl/utils/edit_distance_policy.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/utils/autocorrection_threshold_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/utils/autocorrection_threshold_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/utils/byte_array_view.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/utils/char_utils.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/utils/char_utils.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/utils/int_array_view.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/utils/time_keeper.cpp">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/utils/time_keeper.h">
+			<Option target="Indic_native"/>
+		</Unit>
+		<Unit filename="/home/adesh/Indic-native/core/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
